@@ -1,0 +1,16 @@
+{
+  "name": "store",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start:login": "lerna run --scope login dev --stream",
+    "build:login": "lerna run --scope login build"
+  },
+  "devDependencies": {
+    "lerna": "^6.6.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
