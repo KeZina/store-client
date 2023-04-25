@@ -11,11 +11,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      'login': path.resolve(__dirname, '../login/src'),
-      'shared': path.resolve(__dirname, '../shared/src'),
+      'shared': path.resolve(__dirname, './src'),
     }
   },
-  server: {
-    port: 3000
-  }
 });
