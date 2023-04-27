@@ -18,4 +18,7 @@ export const Button = styled.button`
 
 export const ApplyButton = styled(Button)`
   background-color: rgba(0, 255, 0, 0.4);
+  &:hover {
+    background-color: rgba(0, 255, 0, 0.6);
+  }
 `;

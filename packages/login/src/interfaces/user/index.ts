@@ -1,0 +1,1 @@
+export type {ICredentials} from './user';
