@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { postLogin } from 'login/api/auth/auth';
+import { postLogin } from 'login/api/auth';
 import { ICredentials } from 'login/interfaces/user';
 
 export const useLogin = () => {
