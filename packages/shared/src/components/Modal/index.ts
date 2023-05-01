@@ -1,1 +1,1 @@
-export {Modal} from './Modal.styled';
+export { Modal } from './Modal.styled';

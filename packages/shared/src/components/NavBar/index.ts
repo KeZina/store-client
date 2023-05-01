@@ -1,2 +1,2 @@
-export {NavBarContainer, NavBarButton} from './NavBar.styled';
-export {NavBar} from './NavBar';
+export { NavBarContainer, NavBarButton } from './NavBar.styled';
+export { NavBar } from './NavBar';

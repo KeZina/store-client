@@ -1,1 +1,1 @@
-export {Label} from './Label.styled';
+export { Label } from './Label.styled';

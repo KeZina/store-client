@@ -1,0 +1,1 @@
+export { IUseStoreItems } from './useStoreItems';

@@ -1,4 +1,4 @@
-import { ICredentials } from 'login/interfaces/user';
-import { authInstance } from 'shared/requests';
+import { ICredentials } from 'shared/interfaces/user';
+import { requestInstance } from 'shared/requests';
 
-export const postLogin = async (credentials: ICredentials) => await authInstance.post<string>('/user/login', credentials);
+export const postLogin = async (credentials: ICredentials) => await requestInstance.post('/user/login', credentials);

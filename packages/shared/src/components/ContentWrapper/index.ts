@@ -1,1 +1,1 @@
-export {ContentWrapper} from './ContentWrapper.styled';
+export { ContentWrapper } from './ContentWrapper.styled';

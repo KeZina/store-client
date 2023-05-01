@@ -9,6 +9,7 @@ module.exports = {
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   plugins: ['react-refresh'],
   rules: {
+    'object-curly-spacing': ['error', 'always'],
     'react-refresh/only-export-components': 'warn',
     'quotes': ['error', 'single'],
     'semi': ['error', 'always'],

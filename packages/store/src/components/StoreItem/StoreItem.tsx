@@ -1,21 +1,26 @@
+import { FC } from 'react';
 import { StoreItemContainer, StoreItemDetails, StoreItemTitle } from 'store/components/StoreItem';
 import { ApplyButton, ButtonsContainer } from 'shared/components/Button';
+import { IStoreItem } from 'store/interfaces/storeItem';
 
-export const StoreItem = () => {
-  // TODO connect to api
+interface IStoreItemProps {
+    storeItem: IStoreItem;
+    onPurchase(storeItemId: number): void
+}
 
+export const StoreItem: FC<IStoreItemProps> = ({ storeItem, onPurchase }) => {
   return (
     <StoreItemContainer>
       <StoreItemDetails>
         <StoreItemTitle>
-            Item
+          {storeItem.title}
         </StoreItemTitle>
         <span>
-            Price: <b>12</b>
+            Price: <b>{storeItem.price}</b>
         </span>
       </StoreItemDetails>
       <ButtonsContainer>
-        <ApplyButton>
+        <ApplyButton onClick={() => onPurchase(storeItem.id)}>
             Buy
         </ApplyButton>
       </ButtonsContainer>

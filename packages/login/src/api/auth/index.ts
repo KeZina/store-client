@@ -1,1 +1,1 @@
-export {postLogin} from './auth';
+export { postLogin } from './auth';

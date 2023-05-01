@@ -1,0 +1,1 @@
+export { IStoreItem } from './storeItem';

@@ -1,1 +1,1 @@
-export {ErrorMessage} from './ErrorMessage.styled';
+export { ErrorMessage } from './ErrorMessage.styled';
