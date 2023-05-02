@@ -4,5 +4,7 @@ export interface ICredentials {
 }
 
 export interface IUser {
+    id: number;
     name: string;
+    currency: number;
 }

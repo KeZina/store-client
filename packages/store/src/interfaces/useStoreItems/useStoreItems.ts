@@ -2,5 +2,6 @@ import { IStoreItem } from 'store/interfaces/storeItem';
 
 export interface IUseStoreItems {
     storeItems: IStoreItem[];
-    handlePurchase(storeItemId: number): void;
+    storeItemInPurchase: number | null;
+    handlePurchase(storeItem: IStoreItem): void;
 }

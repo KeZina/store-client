@@ -21,4 +21,8 @@ export const NavBarButton = styled.button`
     background-color: initial;
     color: white;
     cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
 `;

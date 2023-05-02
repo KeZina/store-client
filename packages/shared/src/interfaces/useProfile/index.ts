@@ -1,0 +1,1 @@
+export { IUseProfile } from './useProfile';

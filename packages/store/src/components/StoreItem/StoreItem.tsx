@@ -5,10 +5,11 @@ import { IStoreItem } from 'store/interfaces/storeItem';
 
 interface IStoreItemProps {
     storeItem: IStoreItem;
-    onPurchase(storeItemId: number): void
+    isDisabled: boolean;
+    onPurchase(storeItem: IStoreItem): void
 }
 
-export const StoreItem: FC<IStoreItemProps> = ({ storeItem, onPurchase }) => {
+export const StoreItem: FC<IStoreItemProps> = ({ storeItem, isDisabled, onPurchase }) => {
   return (
     <StoreItemContainer>
       <StoreItemDetails>
@@ -20,7 +21,7 @@ export const StoreItem: FC<IStoreItemProps> = ({ storeItem, onPurchase }) => {
         </span>
       </StoreItemDetails>
       <ButtonsContainer>
-        <ApplyButton onClick={() => onPurchase(storeItem.id)}>
+        <ApplyButton disabled={isDisabled} onClick={() => onPurchase(storeItem)}>
             Buy
         </ApplyButton>
       </ButtonsContainer>

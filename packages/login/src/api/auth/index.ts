@@ -1,1 +1,0 @@
-export { postLogin } from './auth';
