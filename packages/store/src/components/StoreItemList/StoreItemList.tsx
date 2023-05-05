@@ -1,10 +1,10 @@
 import { useContext, useMemo } from 'react';
 import { Layout } from 'shared/components/Layout';
-import { ContentWrapper } from 'shared/components/ContentWrapper';
 import { StoreItem } from 'store/components/StoreItem';
 import { useStoreItems } from 'store/hooks/useStoreItems';
 import { IStoreItem } from 'store/interfaces/storeItem';
 import { ProfileContext } from 'shared/context';
+import { StoreItemListWrapper } from 'store/components/StoreItemList';
 
 export const StoreItemList = () => {
   const { profile, handleChangeCurrency } = useContext(ProfileContext);
@@ -28,9 +28,9 @@ export const StoreItemList = () => {
 
   return (
     <Layout>
-      <ContentWrapper>
+      <StoreItemListWrapper>
         {storeItemList}
-      </ContentWrapper>
+      </StoreItemListWrapper>
     </Layout>
   );
 };

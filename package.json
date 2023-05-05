@@ -6,8 +6,10 @@
   "scripts": {
     "start:login": "lerna run --scope login dev --stream",
     "start:store": "lerna run --scope store dev --stream",
+    "start:profile": "lerna run --scope profile dev --stream",
     "build:login": "lerna run --scope login build",
-    "build:store": "lerna run --scope store build"
+    "build:store": "lerna run --scope store build",
+    "build:profile": "lerna run --scope profile build"
   },
   "devDependencies": {
     "lerna": "^6.6.1"

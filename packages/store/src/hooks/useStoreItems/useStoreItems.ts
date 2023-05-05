@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { IUseStoreItems } from 'store/interfaces/useStoreItems';
-import { IStoreItem } from 'store/interfaces/storeItem';
+import { IStoreItem } from 'shared/interfaces/storeItem';
 import { getAvailableStoreItems } from 'store/api/store';
 import { purhcaseStoreItem } from 'store/api/store';
 

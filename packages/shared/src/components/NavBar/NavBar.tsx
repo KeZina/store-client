@@ -3,12 +3,15 @@ import { NavBarContainer, NavBarButton } from 'shared/components/NavBar';
 import { useNavBar } from 'shared/hooks/useNavBar';
 
 export const NavBar = () => {
-  const { handleGoToProfile, handleLogout } = useNavBar();  
+  const { handleGoToStore, handleGoToProfile, handleLogout } = useNavBar();  
 
   return (
     <div>
       <NavBarContainer>
-        <NavBarButton>
+        <NavBarButton onClick={handleGoToStore}>
+          Store
+        </NavBarButton>
+        <NavBarButton onClick={handleGoToProfile}>
           Profile
         </NavBarButton>
         <NavBarButton onClick={handleLogout}>

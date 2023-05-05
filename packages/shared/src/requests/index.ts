@@ -1,4 +1,4 @@
-import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
+import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 
 const defaultConfig: AxiosRequestConfig = {
   baseURL: import.meta.env.VITE_API_URL,
@@ -9,3 +9,14 @@ const defaultConfig: AxiosRequestConfig = {
 };
 
 export const requestInstance: AxiosInstance = axios.create(defaultConfig);
+
+requestInstance.interceptors.response.use(
+  (response: AxiosResponse) => {
+    return response;
+  },
+  (e: any) => {
+    if (e.response.status === 401) {
+      window.location.href = import.meta.env.VITE_LOGIN_MODULE_URL;
+    }
+  }
+);

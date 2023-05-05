@@ -19,14 +19,13 @@ export const Button = styled.button`
 
 export const ApplyButton = styled(Button)`
   border: none;
-  outline: ${(props) => props.disabled ? '2px solid rgba(0, 0, 0, 0.6)' : 'none'};
   background-color: ${(props) => props.disabled ? 'initial !important' : 'rgba(0, 255, 50, 0.6)'};
   color: ${(props) => props.disabled ? 'rgba(0, 0, 0, 0.6)' : 'initial'};
   cursor: ${(props) => props.disabled ? 'default' : 'pointer'};
   transition-duration: ${(props) => props.disabled ? 'initial' : '0.2s'};
 
   &:hover {
-    background-color: rgba(0, 255, 50, 1);
+    background-color: rgb(0, 255, 50);
     opacity: 0.9;
   }
 `;

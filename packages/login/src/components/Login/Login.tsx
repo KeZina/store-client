@@ -33,22 +33,20 @@ export const Login = () => {
   }, [errors.password]);
 
   return (
-    <>
-      <Modal>
-        <Form onSubmit={handleSubmit(onSubmit)}>
-          <InputsContainer>
-            <Label htmlFor='name'>Name</Label>
-            <Input id='name' type='text' {...register('name', { required: true, maxLength: 20 })} />
-            {nameError}
-            <Label htmlFor='password'>Password</Label>
-            <Input id='password' type='password' {...register('password', { required: true, minLength: 6 })} />
-            {passwordError}
-          </InputsContainer>
-          <ButtonsContainer>
-            <ApplyButton type='submit'>Sign in</ApplyButton>
-          </ButtonsContainer>
-        </Form>
-      </Modal>
-    </>
+    <Modal>
+      <Form onSubmit={handleSubmit(onSubmit)}>
+        <InputsContainer>
+          <Label htmlFor='name'>Name</Label>
+          <Input id='name' type='text' {...register('name', { required: true, maxLength: 20 })} />
+          {nameError}
+          <Label htmlFor='password'>Password</Label>
+          <Input id='password' type='password' {...register('password', { required: true, minLength: 6 })} />
+          {passwordError}
+        </InputsContainer>
+        <ButtonsContainer>
+          <ApplyButton type='submit'>Sign in</ApplyButton>
+        </ButtonsContainer>
+      </Form>
+    </Modal>
   );
 };

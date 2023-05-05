@@ -9,7 +9,7 @@ export const useLogin = () => {
 
       window.location.href = import.meta.env.VITE_STORE_MODULE_URL;
     } catch(e: any) {
-      console.log(e);
+      console.log(e.message);
     }
   }, []);
 
