@@ -1,0 +1,1 @@
+export { IPaginationParams } from './paginationParams';

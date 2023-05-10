@@ -11,4 +11,5 @@ export const ContentWrapper = styled.main`
     padding: 42px 48px;
     margin: auto;
     background-color: white;
+    border: 1px solid rgba(0, 0, 255, 0.2);
 `;
